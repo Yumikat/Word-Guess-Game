@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
+As the user guesses the correct letters, reveal them: m a d o _ _ a.
+
+
+
+Number of Guesses Remaining: (# of guesses remaining for the user).
+Letters Already Guessed: (Letters the user has guessed, displayed like L Z Y H).
+After the user wins/loses the game should automatically choose another word and make the user play it.
+
+
+<body>
+
+    <h1>Press any key to get started</h1>
+    <h2>Wins:<span id="wins-text"></span></h2>
+    <h2><span id="word-text"></span></h2>
+    <h2>Number of guesses remaining:<span id="remaining-text"></span></h2>
+    <h2>Letters already guessed:<span id="guesses-text"></span></h2>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
